@@ -1,0 +1,6 @@
+{
+  "name": "نموذج بيانات الموظف",
+  "description": "نموذج تعبئة بيانات الموظفين بالتقويم الهجري ودعم اللغة العربية",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

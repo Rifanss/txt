@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-[#FDFBF7] text-[#1e1b4b];
+  }
+}
+
+/* Custom styles for DatePicker Rifanss "Milky & Purple" Theme */
+.rmdp-container {
+  width: 100% !important;
+}
+
+.rmdp-input {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  border: 1px solid #e9d5ff !important;
+  color: #1e1b4b !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-size: 12px !important;
+  transition: all 0.2s ease !important;
+  text-align: right !important;
+}
+
+.rmdp-input:focus {
+  border-color: #4c1d95 !important;
+  box-shadow: 0 0 0 2px rgba(76, 29, 149, 0.08) !important;
+  outline: none !important;
+}
+
+.rmdp-calendar {
+  background-color: #ffffff !important;
+  color: #1e1b4b !important;
+  box-shadow: 0 15px 30px -10px rgba(46, 16, 101, 0.1) !important;
+  border: 1px solid #e9d5ff !important;
+  font-family: var(--font-sans) !important;
+  padding: 6px !important;
+}
+
+.rmdp-day span {
+  color: #4b5563 !important;
+}
+
+.rmdp-header-values {
+  color: #4c1d95 !important;
+  font-weight: 700 !important;
+}
+
+.rmdp-week-day {
+  color: #a78bfa !important;
+}
+
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: #4c1d95 !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 15px -3px rgba(76, 29, 149, 0.3) !important;
+}
+
+.rmdp-day:not(.rmdp-disabled, .rmdp-day-hidden) span:hover {
+  background-color: #f5f3ff !important;
+  color: #4c1d95 !important;
+}
+
+.rmdp-arrow-container:hover {
+  background-color: #f5f3ff !important;
+}
+
+.rmdp-arrow {
+  border-color: #4c1d95 !important;
+}
